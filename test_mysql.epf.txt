@@ -5,7 +5,7 @@
 		Возврат;
 	КонецЕсли;
 	mysql = ВнешниеОбработки.Создать("mysql_dll.epf");
-	_sql = mysql.connect("driver={mysql odbc 5.1 driver};server=localhost;uid=root; pwd=123; database=test;port=3306");
+	_sql = mysql.connect("driver={mysql odbc 5.1 driver};server=localhost;uid=root; pwd=123; database=information_schema;port=3306");
 	Если (mysql.error() <> null) Тогда
 		сообщить("Ошибка:" + mysql.error());	
 		возврат;
